@@ -11,6 +11,13 @@ let vapidkeys = {
 
 push.setVapidDetails('mailto:speedygonzales77@gmail.com', vapidkeys.privateKey, vapidkeys.privateKey)
 
-let sub= {};
+let sub= {
+  endpoint: "https://fcm.googleapis.com/fcm/send/dloNXXys3Bg:APA91bEgg0TyJ6LWZtB-MryobcHA18Fzq3TNM1LQ-RwHyTpCbrGGf0AMi8SmjmfeaHsAhXKE9zSgoNGCR4PNn3UXKlChSjRqGDyGurr1qBiRfvEPrAJz3d08jc75xxWzMs14--KRFvrA",
+  expirationTime: null,
+  keys: {
+    p256dh: "BBhBa3D6GSVI4fVLLLRcK4rkYjkzjwZxOP-_OFy9Lrm6h8mMBP3-N_GrJ-2cFOCRJ6BKuTWsxwq5L1L5CcdN3hI",
+    auth: "hYwsO8Jnryz2bjmPomsGGg"
+  }
+}
 
 push.sendNotification(SubmitEvent, 'tet message')
