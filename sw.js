@@ -1,3 +1,3 @@
 self.addEventListener('push', () => {
-    self.ServiceWorkerRegistration.sendNotification('test message', {});
+  self.registration.showNotification('Hello world!', options);
 });
