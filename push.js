@@ -7,7 +7,7 @@ publicKey: 'BCis9afWX-SRKt021KIJwH7M2I67P0dlDBEvIdaeRCRj6GbPMqwG0V9rR6XPmaPCDmOT
 };
 
 webpush.setVapidDetails(
-  'mailto:example@yourdomain.org',
+  'mailto:speedygonzales77@gmail.com',
   vapidKeys.publicKey,
   vapidKeys.privateKey
 );
