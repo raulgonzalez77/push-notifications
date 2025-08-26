@@ -1,10 +1,23 @@
 
-      const options = {
-        body: "Registration is now open - 4",
-        icon: "https://www.blinn.edu/_files/images/ico/favicon.ico", // Optional: path to an icon image
-        tag: "unique-notification-id-4", // Optional: for grouping/replacing notifications
-      };
+self.addEventListener('push', function(event) {
+    console.log('Received a push message', event);
 
-self.addEventListener('push', () => {
-  self.registration.showNotification('Hello world-4!', options);
+    var title = 'Yay a message.';
+    var body = 'We have received a push message.';
+    var icon = '/images/icon-192x192.png';
+    var tag = 'simple-push-demo-notification-tag';
+    var data = {
+    doge: {
+        wow: 'such amaze notification data'
+    }
+    };
+
+    event.waitUntil(
+    self.registration.showNotification(title, {
+        body: body,
+        icon: icon,
+        tag: tag,
+        data: data
+    })
+    );
 });
