@@ -13,4 +13,4 @@ webpush.setVapidDetails(
 );
 
 // This is the same output of calling JSON.stringify on a PushSubscription
-const pushSubscription = {"endpoint":"https://fcm.googleapis.com/fcm/send/dqFSqmvGXL0:APA91bH6iietDxE81nNbE2xgnhvEZ7bS-jbivplUz4u5U47lGjJvZRAI9yZ-DOVK3xcec43GVnKmQCAqFxvmIlORhYg50ZF_Vb71E8TJc_xCRchbz6_38xz1bQoOZDLC8Yj-YeBIeAJU","expirationTime":null,"keys":{"p256dh":"BCUd64YHVdavCqKqMVqjc3dd68Kud_7s_T71YRilx1p4iFc2UR693kDMakyxl-pteYR2SvfbnSp_Xk8JdlniHOs","auth":"UPjhaZENZ8vbVx1Ewq6CrA"}}
+const pushSubscription = {"endpoint":"https://fcm.googleapis.com/fcm/send/cu_jAN_t9no:APA91bFSEOPRFBqIhPkrCpZwGx9h0dZR5e2B6VXhEPc8w0G5DWlWXmfKCEbNW8h2XTasDLjBQBLJx2CNeYw_ID_cQYmNF4E4H_NqyVnCMUUshwwrD51_Kaa6wXw-z2cY49r389DuIcvJ","expirationTime":null,"keys":{"p256dh":"BLImOXVYWQ1oPpuijQ_tEsFBo13M0KJW_dOTMMsa19vDWB75sedohXOgWlp2qFwMoxuxYPLer7F6A94D3kO9-Kg","auth":"ArCClvAEj_LJMTYe_n6U1w"}}
