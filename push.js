@@ -24,11 +24,10 @@ const pushSubscription = {
 
 // The payload you want to send
 const payload = JSON.stringify({
-  title: 'Hello from Node.js!',
-  body: 'This is a real push notification.',
-  icon: 'https://www.blinn.edu/_files/images/ico/favicon.ico',
-  tag: 'test-push',
-  extra: { info: 'Optional extra data' }
+  title: 'Hello!',
+  body: 'This is notification #' + Date.now(),
+  tag: 'notification-' + Date.now(),  // unique every time
+  icon: 'https://www.blinn.edu/_files/images/ico/favicon.ico'
 });
 
 // Send the push notification

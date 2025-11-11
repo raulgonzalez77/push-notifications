@@ -5,7 +5,7 @@ self.addEventListener('push', function(event) {
     const title = data.title || 'Registration is now open';
     const body = data.body || 'We have received a push message.';
     const icon = data.icon || 'https://www.blinn.edu/_files/images/ico/favicon.ico';
-   // const tag = data.tag || Date.now() // unique tag
+    const tag = data.tag; // now always unique
     const extraData = data.extra || {};
 
     event.waitUntil(
