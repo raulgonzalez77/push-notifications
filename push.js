@@ -25,9 +25,10 @@ const pushSubscription = {
 // The payload you want to send
 const payload = JSON.stringify({
   title: 'Hello!',
-  body: 'This is notification #' + Date.now(),
+  body: 'Registration is now open',
   tag: 'notification-' + Date.now(),  // unique every time
-  icon: 'https://www.blinn.edu/_files/images/ico/favicon.ico'
+  icon: 'https://www.blinn.edu/_files/images/ico/favicon.ico',
+  requireInteraction: true,
 });
 
 // Send the push notification
