@@ -31,6 +31,14 @@ const payload = JSON.stringify({
   requireInteraction: true,
 });
 
+      const notification = new Notification("Register Now!", payload);
+
+      notification.onclick = () => {
+        event.preventDefault(); // prevent the browser from focusing the Notification's tab
+        window.open("https://www.blinn.edu/admissions", "_blank");
+        notification.close(); // Close the notification on click
+      };
+
 // Send the push notification
 webpush.sendNotification(pushSubscription, payload)
   .then(response => {
