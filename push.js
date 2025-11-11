@@ -24,7 +24,7 @@ const pushSubscription = {
 
 // The payload you want to send
 const payload = JSON.stringify({
-  title: 'Hello!',
+  title: 'Message from Blinn College',
   body: 'Registration is now open',
   tag: 'notification-' + Date.now(),  // unique every time
   icon: 'https://www.blinn.edu/_files/images/ico/favicon.ico',
